@@ -1,0 +1,8 @@
+python $HOME/seulgi/Customization/evaluate.py \
+    --metrics ImageImageFace \
+    --input_image_dir="../data/profusion/bengio/original_bengio" \
+    --gen_image_dir="../data/profusion/bengio/bengio_result" \
+    --result_path="../data/profusion/bengio" \
+    --input_batch_size=1 \
+    --gen_batch_size=100 \
+    --Description="between original_bengio and bengio_result"

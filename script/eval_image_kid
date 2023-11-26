@@ -1,0 +1,6 @@
+python $HOME/seulgi/Customization/evaluate.py \
+    --metrics ImageImageKID \
+    --input_image_dir="../data/textual-inversion/cat_toy/kid_toy/images" \
+    --gen_image_dir="../data/textual-inversion/cat_toy/kid_toy/gen_toy" \
+    --result_path="../data/textual-inversion/cat_toy" \
+    --Description="between kid_toy/images and kid_toy/gen_toy"

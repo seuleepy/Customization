@@ -1,0 +1,8 @@
+python $HOME/seulgi/Customization/evaluate.py \
+    --metrics ImageImageDINO \
+    --input_image_dir="../data/textual-inversion/cat_toy/cat_toy_train" \
+    --gen_image_dir="../data/textual-inversion/cat_toy/cat_toy_result" \
+    --input_batch_size=6 \
+    --gen_batch_size=100 \
+    --result_path="../data/textual-inversion/cat_toy" \
+    --Description="between cat_toy_train and cat_toy_result"

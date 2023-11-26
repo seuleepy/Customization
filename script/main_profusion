@@ -1,0 +1,9 @@
+accelerate launch main.py \
+    --customization_model="ProFusion" \
+    --instance_data_dir="./data/profusion/bengio/mini_bengio" \
+    --finetuning \
+    --pretrained_model_name_or_path="./pretrained_FFHQ" \
+    --train_batch_size=4 \
+    --num_train_epochs=100 \
+    --learning_rate=2e-5 \
+    --output_dir="./test-finetuning/profusion"

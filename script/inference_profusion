@@ -1,0 +1,10 @@
+python inference.py \
+    --customization_model="ProFusion" \
+    --pretrained_model_name_or_path="./finetuning-model/ProFusion" \
+    --prompt="from a Marvel superhero movie screenshot" \
+    --save_path="./data/profusion/bengio/bengio_result" \
+    --save_img_name="bengio_marvel" \
+    --mapping_json_path="./data/profusion/bengio/mapping.json" \
+    --output_img_num=1000 \
+    --FusionSampling \
+    --input_img_path="./data/profusion/bengio/original_bengio/bengio.jpg"

@@ -1,0 +1,8 @@
+python inference.py \
+    --customization_model="CustomDiffusion" \
+    --pretrained_model_name_or_path="./finetuning-model/CustomDiffusion" \
+    --prompt="A photo of on the moon" \
+    --save_path="./data/custom-diffusion/cat/editability/wo_placeholder/moon" \
+    --save_img_name="moon" \
+    --mapping_json_path="./data/custom-diffusion/cat/editability/wo_placeholder/moon/mapping.json" \
+    --output_img_num=64

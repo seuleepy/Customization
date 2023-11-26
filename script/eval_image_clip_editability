@@ -1,0 +1,9 @@
+python $HOME/seulgi/Customization/evaluate.py \
+    --metrics="ImageImageCLIP" \
+    --input_image_dir="../data/textual-inversion/cat_toy/editability/placeholder/moon" \
+    --gen_image_dir="../data/textual-inversion/cat_toy/editability/wo_placeholder/moon" \
+    --input_batch_size=32 \
+    --gen_batch_size=32 \
+    --result_path="../data/textual-inversion/editability" \
+    --Description="moon" \
+    --CLIP-model="ViT-B/32"

@@ -1,0 +1,8 @@
+python inference.py \
+    --customization_model="TextualInversion" \
+    --pretrained_model_name_or_path="./finetuning-model/TextualInversion" \
+    --prompt="Elmo holding a" \
+    --save_path="./data/textual-inversion/cat_toy/editability/wo_placeholder/elmo" \
+    --save_img_name="elmo" \
+    --mapping_json_path="./data/textual-inversion/cat_toy/editability/wo_placeholder/elmo/mapping.json" \
+    --output_img_num=64

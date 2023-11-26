@@ -1,0 +1,8 @@
+python inference.py \
+    --customization_model="DreamBooth" \
+    --pretrained_model_name_or_path="./finetuning-model/DreamBooth" \
+    --prompt="Elmo holding a" \
+    --save_path="./data/dream-booth/dog/editability/wo_placeholder/elmo" \
+    --save_img_name="elmo" \
+    --mapping_json_path="./data/dream-booth/dog/editability/wo_placeholder/elmo/mapping.json" \
+    --output_img_num=64
