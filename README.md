@@ -29,7 +29,8 @@ Change forder ./profusion_diffusers/src/profusion_diffusers/pipelines/pipeline_u
 
 ## Metrics   
 
-Custom-Diffusion is w/ fine-tune all version.
+Custom-Diffusion is w/ fine-tune all version.   
+The DreamBooth paper does not explicitly specify the particular CLIP model used, so I use separate notation.   
 
 * Using the CLIP to measure Image-Image similarity between:
   * Train images ang generated images
