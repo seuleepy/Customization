@@ -34,7 +34,7 @@ Change forder ./profusion_diffusers/src/profusion_diffusers/pipelines/pipeline_u
   * Placeholder w/ and placeholder w/o
   * *ProFusion requires a single input image, so evaluation is not feasible.*
   * | |RN50|RN101|RN50x4|RN50x16|RN50x64|ViT-B/32|ViT-B/16|ViT-L/14|ViT-L/14@336px|
-    |--|---|-----|------|-------|-------|--------|--------|--------|---------------|
+    |:--:|:---:|:-----:|:------:|:-------:|:-------:|:--------:|:--------:|:--------:|:--------------:|
     |Custom-Diffusion|0.8548|0.8864|0.8716|0.8371|0.7731|0.8567|0.8585|0.8352|0.8194|
     |DreamBooth|0.8456|0.911|0.8888|0.8545|0.7806|0.8854|0.8987|0.8511|0.8514|
     |ProFusion|0.647|0.72575|0.6875|0.596|0.47075|0.643|0.617|0.5735|0.58425|
