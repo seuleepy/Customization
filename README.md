@@ -24,3 +24,18 @@ In setup.py, you can replce setup name with the name you prefer.
 python setup.py install
 ```
 Change forder ./profusion_diffusers/src/profusion_diffusers/pipelines/pipeline_utils.py to pipeline_utils.py I uploaded.
+
+## Metrics
+* Using the CLIP to measure Image-Image similarity between:
+  * Train images ang generated images
+  * Placeholder w/ and placeholder w/o
+  * *ProFusion requires a single input image, so evaluation is not feasible.*
+* Using the DINO model (ViT-B/32) to measure Image-Image similarity between:
+  * Train images and generated images
+* Using KID to measure Image-Image similarity between:
+    * Class images found through retrieval and images generated through prompts for each retrieval (2 images per prompt)
+    * *ProFusion requires a single input images, so evaluation is not feasible*
+  *Using a pretrained face recognition model to measute Image-Image similarity between:
+  * Train face images and generated face images.
+* Using the CLIP model to measure Image-Text similarity between:
+    * Generated images and prompts used for generating those images.
