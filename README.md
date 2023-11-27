@@ -36,7 +36,7 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
   * Train images ang generated images
   * Placeholder w/ and placeholder w/o
   * *ProFusion requires a single input image, so evaluation is not feasible.*
-  * | |RN50|RN101|RN50x4|RN50x16|RN50x64|ViT-B/32|ViT-B/16|ViT-L/14|ViT-L/14@336px|DreamBooth|
+    | |RN50|RN101|RN50x4|RN50x16|RN50x64|ViT-B/32|ViT-B/16|ViT-L/14|ViT-L/14@336px|DreamBooth|
     |:--:|:---:|:-----:|:------:|:------:|:------:|:-------:|:------:|:-----:|:--:|:--:|
     |Custom-Diffusion|0.8548|0.8864|0.8716|0.8371|0.7731|0.8567|0.8585|0.8352|0.8194|-|
     |Custom-Diffusion(Paper)|-|-|-|-|-|0.748|-|-|-|-|
@@ -44,9 +44,8 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
     |DreamBooth(Paper)|-|-|-|-|-|-|-|-|-|0.812|-|
     |ProFusion|0.647|0.72575|0.6875|0.596|0.47075|0.643|0.617|0.5735|0.58425|-|
     |Textual-Inversion|0.6942|0.8008|0.7355|0.6104|0.5196|0.7226|0.7271|0.6753|0.6689|-|
+
     
-    
-       
 * Using the DINO model (ViT-B/32) to measure Image-Image similarity between:
     * Train images and generated images
     * | |DINO (ViT-B/32)|
@@ -56,6 +55,7 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
       |DreamBooth(Paper)|0.696|
       |ProFusion|0.5311|
       |Textual-Inversion|0.4356|
+      
    
 * Using KID to measure Image-Image similarity between:
     * Class images found through retrieval and images generated through prompts for each retrieval (2 images per prompt)
@@ -68,8 +68,8 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
       |DreamBooth|0.0355|
       |ProFusion|-|
       |Textual-Inversion|0.0136|
-   
- 
+
+       
  * Using a pretrained face recognition model to measute Image-Image similarity between:
     * Train face images and generated face images.
     * Available models :   
@@ -82,7 +82,8 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
       |:-:|:--:|:---:|:-----:|:------:|:-------:|:-------:|:--------:|:--------:|
       |ProFusion|0.6012|0.5523|0.6132|0.6218|0.6689|0.4444|0.4033|0.5413|
       |ProFusion(Paper)|0.720|0.616|0.597|0.681|0.774|0.459|0.443|0.432|
-    
+
+      
 * Using the CLIP model to measure Image-Text similarity between:
     * Generated images and prompts used for generating those images.
     * In Custom-Diffusion, a scale of 2.5 is used. It has been represented by scaling it down to 1.
@@ -96,6 +97,6 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
       |ProFusion(Paper)|0.223|0.446|0.374|0.279|0.202|0.293|0.283|0.225|0.229|-|
       |Textual-Inversion|0.2482|0.4587|0.3858|0.2769|0.2205|0.2941|0.3020|0.2347|0.2404|-|
 
-  
+      
 The TextualInveersion paper illustrates similarity through images without providing exact numerical values.
 ![image](https://github.com/seuleepy/Customization/assets/88653864/cff3a486-58e5-4108-9714-f9349291403e)
