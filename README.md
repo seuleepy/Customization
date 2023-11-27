@@ -1,6 +1,6 @@
 # Customization
 
-###Model : DreamBooth, TextualInversion, CustomDiffusion, ProFusion   
+### Model : DreamBooth, TextualInversion, CustomDiffusion, ProFusion   
 
 In main.py, you can train above models.   
 
