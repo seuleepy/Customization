@@ -25,23 +25,27 @@ python setup.py install
 ```
 Change forder ./profusion_diffusers/src/profusion_diffusers/pipelines/pipeline_utils.py to pipeline_utils.py I uploaded.
 
-## Metrics
+## Metrics   
+
 * Using the CLIP to measure Image-Image similarity between:
   * Train images ang generated images
   * Placeholder w/ and placeholder w/o
   * *ProFusion requires a single input image, so evaluation is not feasible.*
-  * Available models :
+  * Available models :   
     ['RN50', 'RN101', 'RN50x4', 'RN50x16', 'RN50x64', 'ViT-B/32', 'ViT-B/16', 'ViT-L/14', 'ViT-L/14@336px']
+    
 * Using the DINO model (ViT-B/32) to measure Image-Image similarity between:
   * Train images and generated images
 * Using KID to measure Image-Image similarity between:
     * Class images found through retrieval and images generated through prompts for each retrieval (2 images per prompt)
     * *ProFusion requires a single input images, so evaluation is not feasible*
+ 
  *Using a pretrained face recognition model to measute Image-Image similarity between:
   * Train face images and generated face images.
   * Available models :   
     ["AdaFace", "VGG-Face", "Facenet", "OpenFace", "DeepFace", "ArcFace", "SFace"]
+    
 * Using the CLIP model to measure Image-Text similarity between:
     * Generated images and prompts used for generating those images.
-    * Available models :
+    * Available models :   
       ['RN50', 'RN101', 'RN50x4', 'RN50x16', 'RN50x64', 'ViT-B/32', 'ViT-B/16', 'ViT-L/14', 'ViT-L/14@336px']
