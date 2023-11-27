@@ -49,6 +49,8 @@ Change forder ./profusion_diffusers/src/profusion_diffusers/pipelines/pipeline_u
     * The original code of AdaFace is   
     https://github.com/mk-minchul/AdaFace
     Installation of face_alignment and pretrained models.
+    * All models except AdaFace utilize the deepface library.
+      https://github.com/serengil/deepface
     
 * Using the CLIP model to measure Image-Text similarity between:
     * Generated images and prompts used for generating those images.
