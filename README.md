@@ -38,8 +38,10 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
   * *ProFusion requires a single input image, so evaluation is not feasible.*
     | |RN50|RN101|RN50x4|RN50x16|RN50x64|ViT-B/32|ViT-B/16|ViT-L/14|ViT-L/14@336px|DreamBooth|
     |:--:|:---:|:-----:|:------:|:------:|:------:|:-------:|:------:|:-----:|:--:|:--:|
-    |Custom-Diffusion|0.8548|0.8864|0.8716|0.8371|0.7731|0.8567|0.8585|0.8352|0.8194|-|
-    |Custom-Diffusion(Paper)|-|-|-|-|-|0.748|-|-|-|-|
+    |Custom-Diffusion(Single)|0.8548|0.8864|0.8716|0.8371|0.7731|0.8567|0.8585|0.8352|0.8194|-|
+    |Custom-Diffusion(Multi)|0.5872|0.7212|0.6592|0.5542|0.4356|0.6322|0.6540|0.6104|0.6009|-|
+    |Custom-Diffusion(Paper, Single)|-|-|-|-|-|0.775|-|-|-|-|
+    |Custom-Diffusion(Paper, Multi)|-|-|-|-|-|0.706|-|-|-|-|
     |DreamBooth|0.8456|0.911|0.8888|0.8545|0.7806|0.8854|0.8987|0.8511|0.8514|-|
     |DreamBooth(Paper)|-|-|-|-|-|-|-|-|-|0.812|-|
     |ProFusion|0.647|0.72575|0.6875|0.596|0.47075|0.643|0.617|0.5735|0.58425|-|
@@ -89,8 +91,10 @@ The DreamBooth paper does not explicitly specify the particular CLIP model used,
     * In Custom-Diffusion, a scale of 2.5 is used. It has been represented by scaling it down to 1.
     * | |RN50|RN101|RN50x4|RN50x16|RN50x64|ViT-B/32|ViT-B/16|ViT-L/14|ViT-L/14@336px|DreamBooth|
       |:--:|:---:|:-----:|:------:|:-------:|:-------:|:--------:|:--------:|:--------:|:--------------:|:-:|
-      |Custom-Diffusion|0.2800|0.5309|0.4340|0.3295|0.2283|0.3328|0.3265|0.2801|0.2857|-|
-      |Custom-Diffusion(Paper)|-|-|-|-|-|0.318|-|-|-|-|
+      |Custom-Diffusion(Single)|0.2800|0.5309|0.4340|0.3295|0.2283|0.3328|0.3265|0.2801|0.2857|-|
+      |Custom-Diffusion(Paper, Single)|-|-|-|-|-|0.318|-|-|-|-|
+      |Custom-Diffusion(Multi)|0.2696|0.5088|0.4137|0.3270|0.2374|0.3187|0.3333|0.3029|0.3019|-|
+      |Custom-Diffusion(Paper, Multi)|-|-|-|-|-|0.3204|-|-|-|-|
       |DreamBooth|0.2504|0.4756|0.3999|0.2946|0.2265|0.2954|0.2922|0.2308|0.2344|-|
       |DreamBooth(Paper)|-|-|-|-|-|-|-|-|-|0.306|
       |ProFusion|0.2075|0.4420|0.3865|0.2750|0.1782|0.2728|0.2910|0.2357|0.2351|-|
